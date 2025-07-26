@@ -10,7 +10,7 @@ user_inputs = {}
 
 # Twilio credentials (replace with env vars in production)
 account_sid = 'AC708abc23ddee77e900ee7e67721a4252'
-auth_token = '3b0938f0fe4411c44d3a58c41ba5eace'
+auth_token = '3c732be20f3da3481d8c5386923bcac5'
 twilio_number = '+17697596857'
 
 client = Client(account_sid, auth_token)
