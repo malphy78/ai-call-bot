@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 account_sid = 'AC708abc23ddee77e900ee7e67721a4252'
 auth_token = '3b0938f0fe4411c44d3a58c41ba5eace'
-twilio_number = '17697596857'
+twilio_number = '+17697596857'
 
 client = Client(account_sid, auth_token)
 
@@ -26,7 +26,7 @@ def voice():
 
 @app.route("/call", methods=['GET'])
 def call():
-    to_number = request.args.get("to", "17697596857")
+    to_number = request.args.get("to", "+17697596857")
     call = client.calls.create(
     to=to_number,
     from_=twilio_number,
