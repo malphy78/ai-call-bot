@@ -28,10 +28,10 @@ def voice():
 def call():
     to_number = request.args.get("to", "+17697596857")
     call = client.calls.create(
-        to=to_number,
-        from_=twilio_number,
-        url="https://ai-call-bot.onrender.com/voice"
-    )
+    to=to_number,
+    from_=twilio_number,
+    url="https://ai-call-bot-couz.onrender.com/voice"  # ✅ NEW
+)
     return f"📞 Calling {to_number}. Call SID: {call.sid}"
 
 if __name__ == "__main__":
