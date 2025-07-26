@@ -30,7 +30,7 @@ def call():
     call = client.calls.create(
         to=to_number,
         from_=twilio_number,
-        url="url="https://ai-call-bot.onrender.com/voice"
+        url="https://ai-call-bot.onrender.com/voice"
     )
     return f"📞 Calling {to_number}. Call SID: {call.sid}"
 
